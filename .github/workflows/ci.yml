@@ -13,8 +13,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm run build
       - uses: jeanlescure/react-deploy-to-s3-action@main
         with:
           args: --acl public-read --follow-symlinks --delete
