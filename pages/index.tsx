@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import {Layout} from "../components/layout";
+import {CMS_NAME} from "../lib/constants";
+import {BaseContainer} from "../components/baseContainer";
 
 export default function Index({ allPosts }) {
   const firstPost = allPosts[0]
@@ -11,7 +12,7 @@ export default function Index({ allPosts }) {
           <Head>
             <title>Next.js Blog Example with {CMS_NAME}</title>
           </Head>
-          <Container>
+          <BaseContainer>
             <Intro />
             {firstPost && (
                 <HeroPost
@@ -24,7 +25,7 @@ export default function Index({ allPosts }) {
                 />
             )}
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          </Container>
+          </BaseContainer>
         </Layout>
       </>
   )
