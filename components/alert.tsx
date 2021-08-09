@@ -3,7 +3,7 @@ import cn from 'classnames';
 import {BaseContainer} from "./baseContainer";
 
 interface alertProps {
-    preview: ReactNode;
+    preview?: boolean;
 }
 
 export const Alert = ({preview}: alertProps) => {
@@ -14,7 +14,7 @@ export const Alert = ({preview}: alertProps) => {
                 'bg-accent-1 border-accent-2': !preview,
             })}
         >
-            <BaseContainer children={
+            <BaseContainer>
                 <div className="py-2 text-center text-sm">
                     {preview ? (
                         <>
@@ -40,7 +40,9 @@ export const Alert = ({preview}: alertProps) => {
                         </>
                     )}
                 </div>
-            }/>
+            </BaseContainer>
         </div>
     );
 };
+
+export default Alert;
