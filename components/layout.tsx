@@ -4,8 +4,8 @@ import {Meta} from "./meta";
 import {Footer} from "./footer";
 
 interface LayoutProps {
-    preview: ReactNode;
-    children: JSX.IntrinsicElements | JSX.IntrinsicAttributes;
+    preview?: boolean;
+    children: ReactNode;
 }
 
 export const Layout = ({ preview, children }: LayoutProps) => {
@@ -19,4 +19,6 @@ export const Layout = ({ preview, children }: LayoutProps) => {
             <Footer />
         </>
     )
-}
+};
+
+export default Layout;
