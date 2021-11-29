@@ -9,7 +9,7 @@ const Index = () =>  {
       <>
         <Layout>
           <Head>
-            <title>Next.js Blog Example with {CMS_NAME}</title>
+            <title>Next.js Blog with {CMS_NAME}</title>
           </Head>
           <BaseContainer>
             <Intro />

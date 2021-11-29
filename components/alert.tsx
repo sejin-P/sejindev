@@ -29,12 +29,26 @@ export const Alert = ({preview}: alertProps) => {
                         </>
                     ) : (
                         <>
-                            The source code for this blog is{' '}
+                            A boy who interested in {' '}
+                            <a
+                                href={`https://go.dev/`}
+                                className="underline hover:text-success duration-200 transition-colors text-blue-300"
+                            >
+                                go
+                            </a>
+                             -
                             <a
                                 href={`https://github.com/vercel/next.js/tree/canary/examples/blog-starter`}
-                                className="underline hover:text-success duration-200 transition-colors"
+                                className="underline hover:text-success duration-200 transition-colors text-green-300"
                             >
-                                available on GitHub
+                                grpc
+                            </a>
+                             -
+                            <a
+                                href={`https://github.com/vercel/next.js/tree/canary/examples/blog-starter`}
+                                className="underline hover:text-success duration-200 transition-colors text-indigo-300"
+                            >
+                                k8s
                             </a>
                             .
                         </>
