@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import {Layout} from "../components/layout";
-import {CMS_NAME} from "../lib/constants";
 import {BaseContainer} from "../components/baseContainer";
 import Intro from "../components/intro";
 
@@ -9,7 +8,7 @@ const Index = () =>  {
       <>
         <Layout>
           <Head>
-            <title>Next.js Blog with {CMS_NAME}</title>
+            <title>Next Blog of sejin-P</title>
           </Head>
           <BaseContainer>
             <Intro />
