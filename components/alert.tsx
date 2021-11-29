@@ -38,14 +38,14 @@ export const Alert = ({preview}: alertProps) => {
                             </a>
                              -
                             <a
-                                href={`https://github.com/vercel/next.js/tree/canary/examples/blog-starter`}
+                                href={`https://grpc.io/`}
                                 className="underline hover:text-success duration-200 transition-colors text-green-300"
                             >
                                 grpc
                             </a>
                              -
                             <a
-                                href={`https://github.com/vercel/next.js/tree/canary/examples/blog-starter`}
+                                href={`https://kubernetes.io/`}
                                 className="underline hover:text-success duration-200 transition-colors text-indigo-300"
                             >
                                 k8s
